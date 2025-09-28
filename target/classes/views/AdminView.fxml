@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fitri.aerohero.controller.TicketAdminController"
+            prefHeight="800.0" prefWidth="1280.0"
+            styleClass="ticket-admin-root"
+            stylesheets="@../css/style.css">
+
+    <!-- Navigation Bar -->
+    <fx:include source="NavBar.fxml"/>
+
+    <!-- Page Layout -->
+    <VBox spacing="40" alignment="TOP_CENTER"
+          AnchorPane.topAnchor="80.0"
+          AnchorPane.leftAnchor="40.0"
+          AnchorPane.rightAnchor="40.0"
+          AnchorPane.bottomAnchor="40.0">
+
+        <!-- Title -->
+        <VBox spacing="15" alignment="CENTER">
+            <Label text="Manage &amp; Monitor Support Tickets" styleClass="ticket-admin-title"
+                   style="-fx-font-weight: bold; -fx-font-size: 35;" />
+            <Label text="Easily oversee customer issues, update statuses, and ensure efficient resolution — all in one central dashboard."
+                   wrapText="true" maxWidth="800" styleClass="ticket-admin-subtitle"/>
+        </VBox>
+
+        <!--Stats Overview -->
+        <HBox spacing="30" alignment="CENTER">
+            <VBox alignment="CENTER" spacing="10" prefWidth="200" styleClass="ticket-admin-stat-box">
+                <Label text="Total Tickets" styleClass="ticket-admin-stat-label"/>
+                <Label fx:id="totalTicketsLabel" text="0" styleClass="ticket-admin-stat-value-green"/>
+            </VBox>
+            <VBox alignment="CENTER" spacing="10" prefWidth="200" styleClass="ticket-admin-stat-box">
+                <Label text="Open" styleClass="ticket-admin-stat-label"/>
+                <Label fx:id="openTicketsLabel" text="0" styleClass="ticket-admin-stat-value-yellow"/>
+            </VBox>
+            <VBox alignment="CENTER" spacing="10" prefWidth="200" styleClass="ticket-admin-stat-box">
+                <Label text="In Progress" styleClass="ticket-admin-stat-label"/>
+                <Label fx:id="inProgressTicketsLabel" text="0" styleClass="ticket-admin-stat-value-orange"/>
+            </VBox>
+            <VBox alignment="CENTER" spacing="10" prefWidth="200" styleClass="ticket-admin-stat-box">
+                <Label text="Resolved" styleClass="ticket-admin-stat-label"/>
+                <Label fx:id="resolvedTicketsLabel" text="0" styleClass="ticket-admin-stat-value-bright-green"/>
+            </VBox>
+        </HBox>
+
+        <!-- Ticket Table with Scroll -->
+        <VBox spacing="20" styleClass="ticket-admin-table-box" prefHeight="300">
+            <HBox alignment="CENTER_LEFT" spacing="0">
+                <Label text="ID" prefWidth="100" alignment="CENTER" styleClass="ticket-admin-table-header"/>
+                <Label text="Category" prefWidth="200" alignment="CENTER" styleClass="ticket-admin-table-header"/>
+                <Label text="Priority" prefWidth="150" alignment="CENTER" styleClass="ticket-admin-table-header"/>
+                <Label text="Message" prefWidth="350" alignment="CENTER" styleClass="ticket-admin-table-header"/>
+                <Label text="Status" prefWidth="200" alignment="CENTER" styleClass="ticket-admin-table-header"/>
+            </HBox>
+            <Region styleClass="ticket-admin-table-divider"/>
+
+            <!-- Wrap this part in a ScrollPane -->
+            <ScrollPane fitToWidth="true" fitToHeight="true" prefHeight="200" styleClass="scroll-pane">
+                <content>
+                    <VBox fx:id="ticketTableContent" spacing="20"/>
+                </content>
+            </ScrollPane>
+        </VBox>
+
+        <!-- 🔹 Footer -->
+        <Label text="© 2025 AeroHero" alignment="CENTER" styleClass="ticket-admin-footer"/>
+    </VBox>
+</AnchorPane>

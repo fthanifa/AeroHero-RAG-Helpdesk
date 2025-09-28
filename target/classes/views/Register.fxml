@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.fxml.FXMLLoader?>
+
+<VBox fx:id="registerRoot"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.fitri.aerohero.controller.RegisterController"
+      prefWidth="1280.0" prefHeight="800.0"
+      spacing="20.0"
+      alignment="TOP_CENTER"
+      stylesheets="@../css/style.css"
+      styleClass="root">
+
+    <!-- Reusable NavBar -->
+    <fx:include source="NavBar.fxml"/>
+
+    <!-- Register Form Wrapper Centered -->
+    <HBox alignment="CENTER" prefWidth="1280.0">
+        <VBox prefWidth="500.0" spacing="20.0" alignment="CENTER" styleClass="profile-wrapper">
+            <Label text="Register!" styleClass="heading" />
+
+            <TextField fx:id="nameField" promptText="Full Name" styleClass="text-field" />
+            <TextField fx:id="emailField" promptText="Email" styleClass="text-field" />
+            <TextField fx:id="phoneField" promptText="Phone Number" styleClass="text-field" />
+            <TextField fx:id="countryField" promptText="Country" styleClass="text-field" />
+            <PasswordField fx:id="passwordField" promptText="Password" styleClass="text-field" />
+            <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" styleClass="text-field" />
+
+            <Button text="Register" onAction="#handleRegister" styleClass="button" />
+            <Label fx:id="errorLabel" textFill="red" />
+            <Button text="Back to Login" onAction="#handleGoToLogin" styleClass="button"/>
+        </VBox>
+    </HBox>
+
+    <!-- Footer -->
+    <Label text="© 2025 AeroHero" styleClass="footer" alignment="CENTER_RIGHT"/>
+</VBox>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" styleClass="root" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fitri.aerohero.controller.ChatController">
+    
+    <!-- Reusable Navigation Bar -->
+    <fx:include source="NavBar.fxml"/>
+
+    <!-- Left Panel -->
+    <VBox layoutX="60.0" layoutY="100.0" prefWidth="500.0" prefHeight="620.0" spacing="20.0" styleClass="left-panel">
+    <padding>
+        <Insets top="30" bottom="0" left="0" right="0"/>
+    </padding>
+
+    <Label text="Talk to AeroBot — Your Smart Travel Assistant"
+       wrapText="true"
+       styleClass="main-heading"
+       style="-fx-font-size: 35;" />
+
+    <Label styleClass="sub-heading" text="Ask anything about flights, bookings, refunds, baggage, and more. Our AI is ready 24/7." wrapText="true" maxWidth="600.0" />
+
+    <VBox spacing="20">
+    <padding>
+        <Insets top="30" />
+    </padding>
+
+    <Button fx:id="startButton"
+            onAction="#handleStart"
+            prefWidth="160.0"
+            minWidth="160.0"
+            styleClass="start-button"
+            text="Start Chat" />
+
+    <HBox spacing="30">
+        <VBox spacing="10" styleClass="question-box">
+            <Label styleClass="question-title" text="Quick Questions" />
+            <Label onMouseClicked="#handleQuickQuestion" styleClass="question-option" text="• Change my flight" />
+            <Label onMouseClicked="#handleQuickQuestion" styleClass="question-option" text="• Check-in info" />
+            <Label onMouseClicked="#handleQuickQuestion" styleClass="question-option" text="• Refund status" />
+        </VBox>
+
+        <VBox spacing="10" styleClass="question-box">
+            <Label styleClass="question-title" text="Help Categories" />
+            <Label onMouseClicked="#handleQuickQuestion" styleClass="question-option" text="• Booking" />
+            <Label onMouseClicked="#handleQuickQuestion" styleClass="question-option" text="• Refund" />
+            <Label onMouseClicked="#handleQuickQuestion" styleClass="question-option" text="• Miles" />
+        </VBox>
+    </HBox>
+</VBox>
+
+</VBox>
+
+
+    <!-- Right Panel (Chat Area) -->
+    <VBox layoutX="686.0" layoutY="101.0" prefHeight="653.0" prefWidth="521.0" spacing="10.0" styleClass="chat-panel">
+        <ScrollPane fx:id="chatScrollPane" fitToWidth="true" prefHeight="506.0" prefWidth="480.0" styleClass="chat-scroll">
+            <content>
+                <VBox fx:id="chatBox" maxWidth="Infinity" prefWidth="480.0" spacing="10.0">
+                    <padding>
+                        <Insets bottom="10" left="10" right="10" top="10" />
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+        <HBox spacing="10.0" styleClass="input-row">
+            <TextField fx:id="userInput" promptText="Type your message..." styleClass="input-field" HBox.hgrow="ALWAYS" />
+            <Button fx:id="sendButton" onAction="#handleSend" styleClass="send-button" text="Send" />
+        </HBox>
+
+        <Label styleClass="footer-label" text="Need a human? – Connect with AeroHero support" />
+    </VBox>
+
+    <!-- Trademark -->
+ <Label layoutX="112.0" layoutY="681.0" prefHeight="13.0" prefWidth="300" style="-fx-text-fill: #9ca0b3; -fx-font-size: 12px; -fx-padding: 40 0 0 0;" text="© 2025 AeroHero" wrapText="true" />
+
+</AnchorPane>

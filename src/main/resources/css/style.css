@@ -1,0 +1,566 @@
+/*fonts*/
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'PoppinsExtraBold';
+    src: url("../fonts/Poppins-ExtraBold.ttf");
+}
+
+/*default app font*/
+.root {
+    -fx-background-color: #1E212B;
+    -fx-font-family: 'Poppins';
+    -fx-padding: 20;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #dbeaff;
+    -fx-text-fill: #1e2235;
+    -fx-font-weight: bold;
+    -fx-background-radius: 34;
+    -fx-cursor: hand;
+    -fx-font-family: "Poppins";
+    -fx-padding: 8 16 8 16;
+}
+
+.button:hover {
+    -fx-background-color: #bccdf4;
+}
+
+
+/* Nav Buttons */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Poppins";
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.nav-button:hover {
+    -fx-text-fill: #a0a0ff;;
+}
+
+/* Sign In button (pill) */
+.sign-in-button {
+    -fx-background-color: #E0E6FF;
+    -fx-text-fill: #1E212B;
+    -fx-font-family: 'PoppinsBold';
+    -fx-font-size: 14px;
+    -fx-background-radius: 20;
+    -fx-padding: 8 20;
+    -fx-cursor: hand;
+}
+
+.sign-in-button:hover {
+    -fx-background-color: #c6d4ff;
+}
+
+.left-panel .main-heading {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+}
+
+.left-panel .sub-heading {
+    -fx-font-size: 14px;
+    -fx-text-fill: #c0c3d4;
+    -fx-font-family: "Poppins";
+}
+
+.main-heading{
+   -fx-font-size: 30px;
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-font-family: "Poppins";    
+}
+
+.start-button {
+    -fx-background-color: #30364A;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 8;
+}
+
+.info-section .category-heading {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-underline: true;
+}
+
+.bullet {
+    -fx-text-fill: #c0c3d4;
+    -fx-font-size: 13px;
+}
+
+.chat-panel {
+    -fx-background-color: #262936;
+    -fx-padding: 20;
+    -fx-background-radius: 15;
+}
+
+.chat-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.input-row {
+    -fx-padding: 5 0;
+}
+
+.input-field {
+    -fx-background-color: #1E212B;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #777;
+    -fx-border-color: #30364A;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+}
+
+.send-button {
+    -fx-background-color: #30364A;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20;
+}
+
+.footer-label {
+    -fx-text-fill: #9ca0b3;
+    -fx-font-size: 12px;
+}
+
+/* CHAT BUBBLES */
+
+.user-bubble {
+    -fx-background-color: #0084ff;
+    -fx-text-fill: white;
+    -fx-padding: 10 14 10 14;
+    -fx-background-radius: 16 16 0 16;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 3, 0, 0, 1);
+}
+
+.bot-bubble {
+    -fx-background-color: #30364A;
+    -fx-text-fill: white;
+    -fx-padding: 10 14 10 14;
+    -fx-background-radius: 16 16 16 0;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+/*scroll pane and scroll bar*/
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #30364A;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #1E212B;
+    -fx-background-insets: 0;
+}
+
+/*left side question box*/
+.question-box {
+    -fx-background-color: #30364A;
+    -fx-padding: 20;
+    -fx-background-radius: 15;
+    -fx-pref-width: 200;
+    -fx-font-family: "Poppins";
+}
+
+.question-title {
+    -fx-font-family: 'PoppinsBold';
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins";
+}
+
+.question-option {
+    -fx-text-fill: #c0c3d4;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-font-family: "Poppins";
+}
+
+.question-option:hover {
+    -fx-text-fill: white;
+}
+
+/* === TRACKING PAGE ONLY === */
+
+.track-root {
+    -fx-background-color: #1E212B;
+    -fx-font-family: "Poppins";
+}
+
+.track-main-heading {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-family: "PoppinsBold";
+}
+
+.track-sub-heading {
+    -fx-text-fill: #B0B0B0;
+    -fx-font-size: 16px;
+    -fx-font-family: "Poppins";
+}
+
+.track-box {
+    -fx-background-color: #30364A;
+    -fx-background-radius: 16;
+    -fx-padding: 30;
+}
+
+.track-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "PoppinsBold";
+}
+
+.track-input {
+    -fx-background-radius: 8;
+    -fx-background-color: #1E212B;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: gray;
+}
+
+.track-button {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 8;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.track-section-title {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-family: "PoppinsBold";
+}
+
+.track-data-line {
+    -fx-text-fill: #CCCCCC;
+    -fx-font-size: 14px;
+}
+
+.track-tip-text {
+    -fx-text-fill: #CCCCCC;
+    -fx-font-size: 14px;
+}
+
+.track-footer-message {
+    -fx-text-fill: #CCCCCC;
+    -fx-font-size: 14px;
+    -fx-font-family: "Poppins";
+}
+
+.track-footer-copy {
+    -fx-text-fill: #B0B0B0;
+    -fx-font-size: 12px;
+}
+
+/* === PASSENGER TICKET VIEW === */
+
+.ticket-passenger-root {
+    -fx-background-color: #1E212B;
+    -fx-font-family: "Poppins";
+}
+
+/* === Titles === */
+.ticket-passenger-title {
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+    -fx-font-family: "PoppinsExtraBold";
+}
+
+.ticket-passenger-subtitle {
+    -fx-text-fill: #B0B0B0;
+    -fx-font-size: 16px;
+    -fx-font-family: "Poppins";
+}
+
+/* === Boxes === */
+.ticket-passenger-box {
+    -fx-background-color: #30364A;
+    -fx-background-radius: 34;
+    -fx-padding: 40;
+}
+
+/* === Section Titles === */
+.ticket-passenger-section-title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-family: "PoppinsExtraBold";
+}
+
+/* === Labels === */
+.ticket-passenger-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* === Input Fields === */
+.ticket-passenger-input {
+    -fx-background-color: #E5E5E5;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 10 15;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-pref-width: 400px;
+    -fx-max-width: 400px;
+    -fx-min-width: 400px;
+}
+
+/* === Submit Button === */
+.ticket-passenger-submit {
+    -fx-background-color: #1E212B;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-pref-width: 400px;
+    -fx-max-width: 400px;
+    -fx-min-width: 400px;
+    -fx-padding: 12 0;
+}
+
+/* === Ticket Subtext === */
+.ticket-passenger-subtext {
+    -fx-text-fill: #B0B0B0;
+    -fx-font-size: 14px;
+}
+
+/* === Footer === */
+.ticket-passenger-footer {
+    -fx-text-fill: #B0B0B0;
+    -fx-font-size: 12px;
+    -fx-font-family: "Poppins";
+}
+
+/* === ADMIN TICKET VIEW  === */
+
+.ticket-admin-root {
+    -fx-background-color: #1E212B;
+    -fx-font-family: "Poppins";
+}
+
+/* === Title Section === */
+.ticket-admin-title {
+    -fx-text-fill: white;
+    -fx-font-size: 48px;
+    -fx-font-family: "PoppinsBold";
+}
+
+.ticket-admin-subtitle {
+    -fx-text-fill: #B0B0B0;
+    -fx-font-size: 16px;
+}
+
+/* === Stats Boxes === */
+.ticket-admin-stat-box {
+    -fx-background-color: #30364A;
+    -fx-background-radius: 20;
+    -fx-padding: 20;
+}
+
+.ticket-admin-stat-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.ticket-admin-stat-value-green {
+    -fx-text-fill: #00FFAA;
+    -fx-font-size: 24px;
+    -fx-font-family: "PoppinsBold";
+}
+
+.ticket-admin-stat-value-yellow {
+    -fx-text-fill: #FFD700;
+    -fx-font-size: 24px;
+    -fx-font-family: "PoppinsBold";
+}
+
+.ticket-admin-stat-value-orange {
+    -fx-text-fill: #FFA500;
+    -fx-font-size: 24px;
+    -fx-font-family: "PoppinsBold";
+}
+
+.ticket-admin-stat-value-bright-green {
+    -fx-text-fill: #00FF00;
+    -fx-font-size: 24px;
+    -fx-font-family: "PoppinsBold";
+}
+
+/* === Ticket Table === */
+.ticket-admin-table-box {
+    -fx-background-color: #30364A;
+    -fx-background-radius: 34;
+    -fx-padding: 40;
+}
+
+.ticket-admin-table-header {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "PoppinsBold";
+}
+
+.ticket-admin-table-divider {
+    -fx-background-color: #4A5568;
+    -fx-min-height: 1;
+}
+
+/* === Footer === */
+.ticket-admin-footer {
+    -fx-text-fill: #B0B0B0;
+    -fx-font-size: 12px;
+    -fx-font-family: "Poppins";
+}
+
+/* === REGISTER AND LOGIN === */
+.card {
+    -fx-background-color: #2a2f4a;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.2, 0, 4);
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Poppins";
+}
+
+.label.title {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 22px;
+    -fx-text-fill: white;
+}
+
+.label.subtext {
+    -fx-font-family: "PoppinsBold";
+    -fx-font-size: 17px;
+    -fx-text-fill: #cfcfcf;
+}
+
+/* Heading */
+.heading {
+    -fx-font-family: "PoppinsExtraBold";
+    -fx-font-size: 44px;
+    -fx-text-fill: white;
+}
+
+/* Text Fields & Password Fields */
+.text-field,
+.password-field {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: black;
+    -fx-background-radius: 34;
+    -fx-padding: 8;
+    -fx-font-family: "Poppins";
+}
+
+/* Login Root */
+#loginRoot {
+    -fx-background-color: #1E212B;
+    -fx-background-insets: 0;
+}
+
+/* Icon Fill */
+.icon {
+    -fx-fill: #30364A;
+}
+
+/* White Box */
+.whitebox {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+}
+
+/* Register Root */
+.register-root {
+    -fx-background-color: #1e2235;
+}
+
+/* Disabled & Readonly Fields */
+.text-field:disabled, .text-field:readonly {
+    -fx-text-fill: #333;
+    -fx-opacity: 1;
+    -fx-background-color: #eeeeee;
+}
+
+/* Profile Wrapper */
+.profile-wrapper {
+    -fx-background-color: #2c2f48;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+}
+
+/* Titled Pane */
+.titled-pane {
+    -fx-background-color: #2A2D3E;
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins";
+}
+
+.titled-pane > .title {
+    -fx-background-color: #1E212B;
+    -fx-text-fill: white;
+}
+
+.titled-pane > .content {
+    -fx-background-color: #2F3447;
+    -fx-padding: 10;
+}
+
+/* FAQ Scroll Styling */
+.faq-scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.faq-scroll .scroll-bar:vertical {
+    -fx-background-color: #2F3447;
+    -fx-padding: 5;
+}
+
+.faq-scroll .thumb {
+    -fx-background-color: #888;
+    -fx-background-radius: 10;
+}
+
+.faq-scroll .viewport {
+    -fx-background-color: transparent;
+}
+

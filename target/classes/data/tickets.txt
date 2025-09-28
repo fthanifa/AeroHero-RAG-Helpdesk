@@ -1,0 +1,5 @@
+Lost Passport,I lost my passport,Flight,High,Open,Sample Passenger
+Flight Delayed,Flight 3 hours late,Schedule,Medium,Resolved,Sample Passenger
+Lost Ticket,Please Help,Refunds & cancellations,Low,Open,Sample Passenger
+Where can I track my baggage?,I need help to track my baggage as my flight is tomorrow!,Special assistance & general inquiries,Low,Open,Sample Passenger
+When is my flight departing,my flight was delayed so now i need information on this,Flight schedule & delays,Medium,Open,Sample Passenger

@@ -1,0 +1,99 @@
+Flight Number: QA974
+Departure: Kuala Lumpur (KUL)
+Arrival: Doha (DOH)
+Aircraft: Boeing 787-9 Dreamliner
+Departure Time: 10:30 AM
+Arrival Time: 2:45 PM
+Status: On Time
+Environmental Info: Cloudy skies with moderate turbulence
+Associated Baggage IDs: B0035, B0092
+
+Flight Number: MH125
+Departure: Kuala Lumpur (KUL)
+Arrival: Sydney (SYD)
+Aircraft: Airbus A330
+Departure Time: 8:00 PM
+Arrival Time: 6:30 AM (Next Day)
+Status: Delayed
+Environmental Info: Thunderstorms in Sydney
+Associated Baggage IDs: B0064, B0077
+
+Flight Number: AK304
+Departure: Penang (PEN)
+Arrival: Singapore (SIN)
+Aircraft: Airbus A320neo
+Departure Time: 6:45 AM
+Arrival Time: 8:00 AM
+Status: Cancelled
+Environmental Info: Technical fault reported pre-takeoff
+Associated Baggage IDs: B0100, B0111
+
+Flight Number: SQ851
+Departure: Johor Bahru (JHB)
+Arrival: Singapore (SIN)
+Aircraft: Boeing 737 MAX
+Departure Time: 4:10 PM
+Arrival Time: 5:00 PM
+Status: Boarding
+Environmental Info: Clear skies and smooth winds
+Associated Baggage IDs: B0019
+
+Flight Number: OD212
+Departure: Kuala Lumpur (KUL)
+Arrival: Tokyo Narita (NRT)
+Aircraft: Airbus A350
+Departure Time: 11:15 PM
+Arrival Time: 7:30 AM (Next Day)
+Status: On Time
+Environmental Info: Cold weather, possibility of light snow
+Associated Baggage IDs: B0044, B0055
+
+Flight Number: EY678  
+Departure: Kuala Lumpur (KUL)  
+Arrival: Abu Dhabi (AUH)  
+Aircraft: Boeing 777  
+Departure Time: 2:00 AM  
+Arrival Time: 5:30 AM  
+Status: On Time  
+Environmental Info: Clear night skies  
+Associated Baggage IDs: B0201, B0202
+
+Flight Number: CX905  
+Departure: Penang (PEN)  
+Arrival: Hong Kong (HKG)  
+Aircraft: Airbus A321  
+Departure Time: 1:45 PM  
+Arrival Time: 5:25 PM  
+Status: Delayed  
+Environmental Info: Heavy rain at arrival  
+Associated Baggage IDs: B0203, B0204
+
+Flight Number: JL723  
+Departure: Kuala Lumpur (KUL)  
+Arrival: Tokyo Haneda (HND)  
+Aircraft: Boeing 787  
+Departure Time: 10:00 PM  
+Arrival Time: 6:00 AM (Next Day)  
+Status: On Time  
+Environmental Info: Light snow in Tokyo  
+Associated Baggage IDs: B0205, B0206
+
+Flight Number: TG414  
+Departure: Langkawi (LGK)  
+Arrival: Bangkok (BKK)  
+Aircraft: Airbus A320  
+Departure Time: 3:15 PM  
+Arrival Time: 4:30 PM  
+Status: Boarding  
+Environmental Info: Light wind, clear visibility  
+Associated Baggage IDs: B0207
+
+Flight Number: AI342  
+Departure: Kuala Lumpur (KUL)  
+Arrival: Chennai (MAA)  
+Aircraft: Airbus A321  
+Departure Time: 6:25 AM  
+Arrival Time: 8:40 AM  
+Status: Cancelled  
+Environmental Info: Technical fault  
+Associated Baggage IDs: B0208, B0209

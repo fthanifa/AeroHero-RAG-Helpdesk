@@ -1,0 +1,89 @@
+Baggage ID: B0035
+Flight ID: QA974
+Status: In Transit
+Location: Kuala Lumpur International Airport
+
+Baggage ID: B0092
+Flight ID: QA974
+Status: Transferred to connecting flight
+Location: Hamad International Baggage Belt 3
+
+Baggage ID: B0064
+Flight ID: MH125
+Status: Arrived
+Location: Sydney Kingsford Smith Terminal 1
+
+Baggage ID: B0077
+Flight ID: MH125
+Status: In Transit
+Location: Kuala Lumpur Cargo Area B
+
+Baggage ID: B0100
+Flight ID: AK304
+Status: Lost
+Location: Penang International - Unclaimed Desk
+
+Baggage ID: B0111
+Flight ID: AK304
+Status: Misrouted
+Location: Sent to Johor by mistake
+
+Baggage ID: B0019
+Flight ID: SQ851
+Status: Boarding with passenger
+Location: Johor Bahru Departure Gate 3
+
+Baggage ID: B0044
+Flight ID: OD212
+Status: Checked In
+Location: KLIA Terminal M Belt 7
+
+Baggage ID: B0055
+Flight ID: OD212
+Status: On Conveyor
+Location: Tokyo Narita Sorting Zone A
+
+Baggage ID: B0201  
+Flight ID: EY678  
+Status: Checked In  
+Location: KLIA Terminal A Check-In Row 3  
+
+Baggage ID: B0202  
+Flight ID: EY678  
+Status: In Transit  
+Location: Abu Dhabi Belt 4  
+
+Baggage ID: B0203  
+Flight ID: CX905  
+Status: Delayed  
+Location: Penang Weather Hold Zone  
+
+Baggage ID: B0204  
+Flight ID: CX905  
+Status: Awaiting Customs  
+Location: Hong Kong Terminal 2  
+
+Baggage ID: B0205  
+Flight ID: JL723  
+Status: Scanned at Departure  
+Location: KUL Gate C13  
+
+Baggage ID: B0206  
+Flight ID: JL723  
+Status: In Aircraft Hold  
+Location: Boeing 787 Cargo Area  
+
+Baggage ID: B0207  
+Flight ID: TG414  
+Status: Loading  
+Location: Langkawi Conveyor Belt 2  
+
+Baggage ID: B0208  
+Flight ID: AI342  
+Status: Returned to Passenger  
+Location: KLIA Terminal Lost & Found  
+
+Baggage ID: B0209  
+Flight ID: AI342  
+Status: Delayed  
+Location: Chennai Terminal Hold Area  

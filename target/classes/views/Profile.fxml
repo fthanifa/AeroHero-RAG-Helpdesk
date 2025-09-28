@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.fitri.aerohero.controller.ProfileController"
+      prefHeight="800.0" prefWidth="1280.0"
+      styleClass="root"
+      spacing="5.0"
+      alignment="TOP_CENTER"
+      stylesheets="@../css/style.css">
+
+    <!-- NavBar -->
+    <fx:include source="NavBar.fxml"/>
+
+    <!-- Title -->
+    <Label text="My Profile"
+           styleClass="heading"
+           style="-fx-font-weight: bold; -fx-font-size: 35;"
+           />
+
+    <!-- Profile Wrapper -->
+    <HBox alignment="CENTER">
+        <VBox spacing="20.0" prefWidth="560.0" styleClass="profile-wrapper">
+            <VBox.margin>
+                <Insets top="-10.0"/>
+            </VBox.margin>
+
+            <!-- User Icon + Info -->
+            <VBox alignment="CENTER" spacing="10.0">
+                <ImageView fitHeight="100.0" fitWidth="100.0">
+                    <image>
+                        <Image url="@../images/user icon.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="nameLabel" styleClass="profile-name" />
+                <Hyperlink fx:id="emailLink" styleClass="profile-email" />
+            </VBox>
+
+            <!-- Info Card -->
+            <VBox spacing="12.0">
+                <Label text="Name" styleClass="profile-label"/>
+                <TextField fx:id="nameField" editable="false" styleClass="text-field"/>
+
+                <Label text="Email address" styleClass="profile-label"/>
+                <TextField fx:id="emailField" editable="false" styleClass="text-field"/>
+
+                <HBox spacing="20.0">
+                    <VBox spacing="5.0" prefWidth="270.0">
+                        <Label text="Phone number" styleClass="profile-label"/>
+                        <TextField fx:id="phoneField" editable="false" styleClass="text-field"/>
+                    </VBox>
+                    <VBox spacing="5.0" prefWidth="270.0">
+                        <Label text="Country" styleClass="profile-label"/>
+                        <TextField fx:id="countryField" editable="false" styleClass="text-field"/>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </VBox>
+    </HBox>
+
+    <!-- Footer -->
+    <Label text="© 2025 AeroHero" styleClass="footer" alignment="CENTER"/>
+</VBox>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.fitri.aerohero.controller.TicketPassengerController"
+      prefHeight="800.0" prefWidth="1280.0"
+      styleClass="ticket-passenger-root"
+      stylesheets="@../css/style.css">
+
+    <!-- Fixed Top Navigation Bar -->
+    <fx:include source="NavBar.fxml"/>
+
+    <!-- Scrollable Ticket Content -->
+    <ScrollPane fitToWidth="true" fitToHeight="true" VBox.vgrow="ALWAYS"
+                styleClass="ticket-passenger-root-scroll">
+        <content>
+            <VBox spacing="40" alignment="TOP_CENTER">
+                <padding>
+                    <Insets top="40" bottom="40" left="40" right="40"/>
+                </padding>
+
+                <!-- Title Section -->
+                <VBox spacing="15" alignment="CENTER">
+                    <Label text="Support Tickets Hub" style="-fx-font-size: 35px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+                    <Label text="Submit new issues, check your ticket status, and stay connected with support."
+                    wrapText="true" maxWidth="800"
+                    style="-fx-text-alignment: center; -fx-alignment: center;"
+                    styleClass="ticket-passenger-subtitle"/>
+                </VBox>
+
+                <!-- Form & List Section -->
+                <HBox spacing="40" alignment="CENTER">
+
+                    <!-- Submit Ticket Form -->
+                    <VBox spacing="20" prefWidth="500" styleClass="ticket-passenger-box">
+                        <Label text="Submit a Ticket" styleClass="ticket-passenger-section-title"
+                        style="-fx-font-weight: bold; -fx-font-size: 18px;"/>
+
+                        <VBox spacing="8">
+                            <Label text="Subject" styleClass="ticket-passenger-label"/>
+                            <TextField fx:id="subjectField" promptText="Lost Baggage" styleClass="ticket-passenger-input"/>
+                        </VBox>
+
+                        <VBox spacing="8">
+                            <Label text="Category" styleClass="ticket-passenger-label"/>
+                            <ComboBox fx:id="categoryCombo" promptText="Select Category" styleClass="ticket-passenger-input"/>
+                        </VBox>
+
+                        <VBox spacing="8">
+                            <Label text="Priority" styleClass="ticket-passenger-label"/>
+                            <ComboBox fx:id="priorityCombo" promptText="Select Priority" styleClass="ticket-passenger-input"/>
+                        </VBox>
+
+                        <VBox spacing="8">
+                            <Label text="Message" styleClass="ticket-passenger-label"/>
+                            <TextArea fx:id="messageArea" promptText="Describe your issue"
+                                      prefHeight="100" wrapText="true" styleClass="ticket-passenger-input"/>
+                        </VBox>
+
+                        <Button fx:id="submitButton" text="Submit Ticket" styleClass="ticket-passenger-submit"/>
+                    </VBox>
+
+                    <!-- Your Tickets List -->
+                    <VBox spacing="20" prefWidth="500" styleClass="ticket-passenger-box">
+                        <Label text="Your Tickets" styleClass="ticket-passenger-section-title"
+                        style="-fx-font-weight: bold; -fx-font-size: 18px;"/>
+                        <Label text="Submitted tickets can be viewed here" styleClass="ticket-passenger-subtext"/>
+
+                        <ScrollPane prefHeight="300" fitToWidth="true" styleClass="ticket-passenger-scroll">
+                            <content>
+                                <VBox spacing="15" fx:id="ticketList"/>
+                            </content>
+                        </ScrollPane>
+                    </VBox>
+
+                </HBox>
+
+                <!-- Footer -->
+                <Label text="© 2025 AeroHero" alignment="CENTER" styleClass="ticket-passenger-footer"/>
+            </VBox>
+        </content>
+    </ScrollPane>
+</VBox>

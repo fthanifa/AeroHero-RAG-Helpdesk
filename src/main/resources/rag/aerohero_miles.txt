@@ -1,0 +1,38 @@
+Q: What are AeroMiles?
+A: AeroMiles are a fictional loyalty point system in AeroHero. Passengers earn points for completing simulated flights and interacting with the support system.
+
+Q: How do I earn AeroMiles?
+A: You earn AeroMiles by submitting tickets, using the chatbot, completing bookings, and checking in baggage. These interactions simulate customer engagement.
+
+Q: How many miles do I earn per activity?
+A:
+- Submitting a ticket: 15 AeroMiles
+- Checking baggage: 10 AeroMiles
+- Completing a simulated flight: 25 AeroMiles
+- Using the chatbot: 5 AeroMiles per session
+
+Q: Can I redeem my AeroMiles?
+A: In the AeroHero simulation, AeroMiles do not have real-world value. However, you may simulate redemptions such as seat upgrades or priority ticket handling.
+
+Q: Where can I check my AeroMiles balance?
+A: Your current AeroMiles are shown in your Passenger Dashboard. You may also request a balance update using the chatbot.
+
+Q: Do AeroMiles expire?
+A: Yes, AeroMiles expire after 180 days of inactivity in the system. Interacting with any feature (ticket, chatbot, tracking) resets the countdown.
+
+Q: Can I transfer AeroMiles to another user?
+A: No, AeroMiles are not transferable. Each user account maintains its own balance for simulation integrity.
+
+Q: What’s the purpose of AeroMiles in the project?
+A: AeroMiles are implemented to simulate real airline reward programs. It gives users a sense of progression and encourages exploration of the app features.
+
+Q: Can admins adjust miles?
+A: Yes, admins can view and manually update a passenger's AeroMiles via the user management module for testing purposes.
+
+Q: Is there a tier system (like Silver/Gold)?
+A: AeroHero includes three simulated tiers:
+- Basic: 0–99 miles
+- Frequent Flyer: 100–299 miles
+- Elite: 300+ miles
+Tiers may influence response speed and ticket priority in simulation.
+

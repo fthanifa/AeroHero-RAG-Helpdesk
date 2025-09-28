@@ -1,0 +1,36 @@
+Q: Where can I find my baggage status?
+A: Use the baggage tracking tool and enter your baggage ID.
+
+Q: Can I update my flight info?
+A: Only admins can modify flight data; submit a ticket if there's a discrepancy.
+
+Q: What is AeroHero?
+A: AeroHero is a simulated airline customer service application designed to help passengers resolve issues related to flights, baggage, refunds, and ticketing via an AI chatbot and support ticket system.
+
+Q: How do I submit a ticket?
+A: Go to the Passenger Dashboard and click on "Submit Ticket." Fill in the required information and select the appropriate category (e.g. baggage, flight delay, refund).
+
+Q: How do I check my baggage status?
+A: Navigate to the “Track” tab and enter your Baggage ID or Flight ID. The system will retrieve the latest simulated baggage info for you.
+
+Q: How do I track my flight status?
+A: Use the Track tab and enter your flight number to get real-time updates.
+
+Q: Can I track my baggage with AeroHero?
+A: Yes, just enter your baggage reference code in the Track tab to view current status.
+
+Q: What languages does the AeroHero chatbot support?
+A: English.
+
+Q: Where can I find help for common questions?
+A: Head to the FAQs tab for quick answers to common booking, refund, and travel queries.
+
+Q: Will I be logged out if I close the app?
+A: Yes, for your security, AeroHero automatically logs you out when the session ends.
+
+Q: How much checked baggage am I allowed?
+A: Checked baggage allowance depends on your flight type: Economy: 20kg Business 30kg, First Class: 40kg. You can view your exact allowance in the Tickets section after selecting a flight.
+
+Q: Can I bring sports equipment or oversized baggage?
+A: Yes, but fees and limits depend on the airline and flight route.
+You’ll see options for special baggage when booking your flight or under the Manage Booking section.

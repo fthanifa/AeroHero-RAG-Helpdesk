@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fitri.aerohero.controller.TrackingViewController1"
+            prefHeight="800.0" prefWidth="1280.0"
+            stylesheets="@../css/style.css"
+            styleClass="track-root">
+
+    <fx:include source="NavBar.fxml"/>
+
+    <VBox spacing="30" alignment="TOP_CENTER" AnchorPane.topAnchor="80.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.bottomAnchor="80.0">
+
+        <!-- Title -->
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Track Your Baggage or Flight"
+            styleClass="track-main-heading"
+            style="-fx-font-weight: bold; -fx-font-size: 35;" />
+
+            <Label text="Know exactly where your luggage and flight is — no need to panic or unpack your feelings."
+            wrapText="true" maxWidth="900" styleClass="track-sub-heading"
+            textAlignment="CENTER" alignment="CENTER"/>
+
+        </VBox>
+
+        <!-- 2x2 Grid -->
+        <GridPane hgap="30" vgap="30" alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="50"/>
+                <ColumnConstraints percentWidth="50"/>
+            </columnConstraints>
+
+            <VBox spacing="20" GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="500" styleClass="track-box">
+                <Label text="Baggage ID" styleClass="track-label"/>
+                <TextField fx:id="baggageIdField" promptText="Example : BAG6969" prefWidth="440" styleClass="track-input"/>
+
+                <Label text="Flight Number" styleClass="track-label"/>
+                <TextField fx:id="flightNumberField" promptText="Example : B0035" prefWidth="440" styleClass="track-input"/>
+
+                <Button fx:id="trackButton" text="Track Now" prefWidth="440" styleClass="track-button"/>
+            </VBox>
+
+            <VBox spacing="10" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="500" styleClass="track-box">
+                <Label text="💡 Tips and Warnings" styleClass="track-section-title"/>
+                <Label fx:id="trackingDetailsLabel" text="Tracking tips will appear here." wrapText="true" maxWidth="460" styleClass="track-tip-text"/>
+            </VBox>
+
+            <VBox spacing="10" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="500" styleClass="track-box">
+                <Label text="Tracking Details" styleClass="track-section-title"/>
+                <Label fx:id="infoBaggageId" text="• Baggage ID: -" styleClass="track-data-line"/>
+                <Label fx:id="infoFlightNumber" text="• Flight Number: -" styleClass="track-data-line"/>
+                <Label fx:id="infoPassengerName" text="• Passenger Name: -" styleClass="track-data-line"/>
+            </VBox>
+
+            <VBox spacing="10" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="500" styleClass="track-box">
+                <Label text="Flight Information" styleClass="track-section-title"/>
+                <Label fx:id="infoFlightStatus" text="• Flight Status: -" styleClass="track-data-line"/>
+                <Label fx:id="infoBaggageStatus" text="• Baggage Status: -" styleClass="track-data-line"/>
+                <Label fx:id="infoPickup" text="• Estimated Pickup: -" styleClass="track-data-line"/>
+            </VBox>
+        </GridPane>
+
+        <!-- Footer -->
+        <VBox spacing="5" alignment="CENTER">
+            <Label text="Because losing track of both your bag and flight builds resilience."
+            wrapText="true" maxWidth="900" styleClass="track-footer-message"
+            textAlignment="CENTER" alignment="CENTER"/>
+            <Label text="© 2025 AeroHero" styleClass="track-footer-copy"/>
+        </VBox>
+    </VBox>
+</AnchorPane>

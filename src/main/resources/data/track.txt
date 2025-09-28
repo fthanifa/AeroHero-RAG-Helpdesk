@@ -1,0 +1,19 @@
+QA974,B0035,Taylor Swift,On Time,In Transit,Kuala Lumpur International Airport
+QA974,B0092,Ariana Grande,On Time,Transferred to connecting flight,Hamad International Baggage Belt 3
+MH125,B0064,Ali Zain,Delayed,Arrived,Sydney Kingsford Smith Terminal 1
+MH125,B0077,Zayn Malik,Delayed,In Transit,Kuala Lumpur Cargo Area B
+AK304,B0100,Selena Gomez,Cancelled,Lost,Penang International - Unclaimed Desk
+AK304,B0111,Harry Styles,Cancelled,Misrouted,Sent to Johor by mistake
+SQ851,B0019,Ed Sheeran,Boarding,Boarding with passenger,Johor Bahru Departure Gate 3
+OD212,B0044,Doja Cat,On Time,Checked In,KLIA Terminal M Belt 7
+OD212,B0055,Rihanna,On Time,On Conveyor,Tokyo Narita Sorting Zone A
+EY678,B0201,Shawn Mendes,On Time,Checked In,KLIA Terminal A Check-In Row 3
+EY678,B0202,Justin Bieber,On Time,In Transit,Abu Dhabi Belt 4
+CX905,B0203,The Weeknd,Delayed,Delayed,Penang Weather Hold Zone
+CX905,B0204,Dua Lipa,Delayed,Awaiting Customs,Hong Kong Terminal 2
+JL723,B0205,Bruno Mars,On Time,Scanned at Departure,KUL Gate C13
+JL723,B0206,Lana Del Rey,On Time,In Aircraft Hold,Boeing 787 Cargo Area
+TG414,B0207,SZA,Boarding,Loading,Langkawi Conveyor Belt 2
+AI342,B0208,Kendrick Lamar,Cancelled,Returned to Passenger,KLIA Terminal Lost & Found
+AI342,B0209,Billie Eilish,Cancelled,Delayed,Chennai Terminal Hold Area
+

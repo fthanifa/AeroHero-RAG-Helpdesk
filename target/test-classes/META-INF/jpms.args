@@ -1,0 +1,4 @@
+--patch-module
+com.fitri.aerohero=_
+--add-reads
+com.fitri.aerohero=ALL-UNNAMED

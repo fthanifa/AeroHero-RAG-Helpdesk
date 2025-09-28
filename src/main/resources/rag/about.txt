@@ -1,0 +1,3 @@
+AeroHero is a simulated desktop helpdesk application designed for the airline industry. 
+It assists airline passengers and customer support agents by streamlining communication through ticketing, flight and baggage tracking, AI chatbot support, and a browsable FAQ section. 
+

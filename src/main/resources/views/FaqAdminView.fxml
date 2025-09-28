@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="faqAdminRoot" prefHeight="800.0" prefWidth="1280.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fitri.aerohero.controller.FaqAdminController"
+            stylesheets= "@../css/style.css"
+            styleClass="root">
+
+    <children>
+        <!-- Title -->
+        <Label layoutX="100.0" layoutY="40.0" text="Manage FAQs"
+                styleClass="heading"
+                style="-fx-font-weight: bold; -fx-font-size: 35;"/>
+
+        <Button layoutX="1150.0" layoutY="20.0" text="← Back" onAction="#handleBack" styleClass="nav-button"/>
+
+        <!-- Search -->
+        <HBox layoutX="100.0" layoutY="100.0" spacing="10.0">
+            <children>
+                <TextField fx:id="searchField" promptText="Search..." prefWidth="400.0" styleClass="text-field"/>
+                <Button text="Search" onAction="#handleSearch" styleClass="button"/>
+            </children>
+        </HBox>
+
+        <!-- FAQ Table (reduced height) -->
+        <TableView fx:id="faqTable" layoutX="100.0" layoutY="160.0" prefWidth="1080.0" prefHeight="280.0">
+            <columns>
+                <TableColumn fx:id="categoryColumn" text="Category" prefWidth="150.0"/>
+                <TableColumn fx:id="questionColumn" text="Question" prefWidth="400.0"/>
+                <TableColumn fx:id="answerColumn" text="Answer" prefWidth="500.0"/>
+            </columns>
+        </TableView>
+
+        <!-- No results label -->
+        <Label fx:id="noResultsLabel" layoutX="100.0" layoutY="450.0" text="No matching FAQs found."
+               textFill="red" visible="false"/>
+
+        <!-- Add / Delete Section (moved up) -->
+        <VBox layoutX="100.0" layoutY="480.0" spacing="10.0" prefWidth="1080.0">
+            <children>
+                <TextField fx:id="categoryField" promptText="Category" styleClass="text-field"/>
+                <TextField fx:id="questionField" promptText="Question" styleClass="text-field"/>
+                <TextArea fx:id="answerField" promptText="Answer" prefHeight="100.0" styleClass="text-field"/>
+
+                <HBox spacing="10.0">
+                    <children>
+                        <Button text="Add FAQ" onAction="#handleAddFaq" styleClass="button"/>
+                        <Button text="Delete Selected" onAction="#handleDeleteFaq" styleClass="button"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
